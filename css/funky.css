@@ -15,8 +15,23 @@ td {
     border: 1px solid black;
 }
 
+.minicircle {
+    border-radius: 3px;
+    width: 6px;
+    height: 6px;
+    border: 1px solid black;
+}
+
+.secret {
+    background-color: dimgrey;
+}
+
 .results {
     width: 100px;
+}
+
+.white {
+    background-color: white;
 }
 
 .red {

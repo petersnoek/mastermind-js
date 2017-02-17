@@ -4,33 +4,94 @@
     <title>MastermindJS</title>
     <link href="css/funky.css" rel="stylesheet" type="text/css">
 
-    <!-- jquery is needed for spectrum color picker -->
-    <script src="js/jquery-3.1.1.min.js"></script>
-
     <!-- spectrum color picker: http://bgrins.github.io/spectrum/ -->
-    <script src='js/spectrum.js'></script>
     <link rel='stylesheet' href='css/spectrum.css' />
 
-    <!-- game code -->
-    <script src='js/mastermind.js'></script>
+
 </head>
 <body>
 
+<table class="secret">
+    <tr>
+        <td> <div id="0.secret" class="circle"></div> </td>
+        <td> <div id="1.secret" class="circle"></div> </td>
+        <td> <div id="2.secret" class="circle"></div> </td>
+        <td> <div id="3.secret" class="circle"></div> </td>
+        <td> <div id="r.secret" class="results"></div> </td>
+    </tr>
+</table>
+
 <table>
     <tr>
-        <td> <div id="0.0" class="circle"></div> </td>
-        <td> <div id="1.0" class="circle"></div> </td>
-        <td> <div id="2.0" class="circle"></div> </td>
-        <td> <div id="3.0" class="circle"></div> </td>
-        <td> <div id="r.0" class="results"></div> </td>
+        <td> <div id="0.11" class="circle"></div> </td>
+        <td> <div id="1.11" class="circle"></div> </td>
+        <td> <div id="2.11" class="circle"></div> </td>
+        <td> <div id="3.11" class="circle"></div> </td>
+        <td> <div id="r.11" class="results"></div> </td>
     </tr>
 
     <tr>
-        <td> <div id="0.1" class="circle"></div> </td>
-        <td> <div id="1.1" class="circle"></div> </td>
-        <td> <div id="2.1" class="circle"></div> </td>
-        <td> <div id="3.1" class="circle"></div> </td>
-        <td> <div id="r.1" class="results"></div> </td>
+        <td> <div id="0.10" class="circle"></div> </td>
+        <td> <div id="1.10" class="circle"></div> </td>
+        <td> <div id="2.10" class="circle"></div> </td>
+        <td> <div id="3.10" class="circle"></div> </td>
+        <td> <div id="r.10" class="results"></div> </td>
+    </tr>
+
+    <tr>
+        <td> <div id="0.9" class="circle"></div> </td>
+        <td> <div id="1.9" class="circle"></div> </td>
+        <td> <div id="2.9" class="circle"></div> </td>
+        <td> <div id="3.9" class="circle"></div> </td>
+        <td> <div id="r.9" class="results"></div> </td>
+    </tr>
+
+    <tr>
+        <td> <div id="0.8" class="circle"></div> </td>
+        <td> <div id="1.8" class="circle"></div> </td>
+        <td> <div id="2.8" class="circle"></div> </td>
+        <td> <div id="3.8" class="circle"></div> </td>
+        <td> <div id="r.8" class="results"></div> </td>
+    </tr>
+
+    <tr>
+        <td> <div id="0.7" class="circle"></div> </td>
+        <td> <div id="1.7" class="circle"></div> </td>
+        <td> <div id="2.7" class="circle"></div> </td>
+        <td> <div id="3.7" class="circle"></div> </td>
+        <td> <div id="r.7" class="results"></div> </td>
+    </tr>
+
+    <tr>
+        <td> <div id="0.6" class="circle"></div> </td>
+        <td> <div id="1.6" class="circle"></div> </td>
+        <td> <div id="2.6" class="circle"></div> </td>
+        <td> <div id="3.6" class="circle"></div> </td>
+        <td> <div id="r.6" class="results"></div> </td>
+    </tr>
+
+    <tr>
+        <td> <div id="0.5" class="circle"></div> </td>
+        <td> <div id="1.5" class="circle"></div> </td>
+        <td> <div id="2.5" class="circle"></div> </td>
+        <td> <div id="3.5" class="circle"></div> </td>
+        <td> <div id="r.5" class="results"></div> </td>
+    </tr>
+
+    <tr>
+        <td> <div id="0.4" class="circle"></div> </td>
+        <td> <div id="1.4" class="circle"></div> </td>
+        <td> <div id="2.4" class="circle"></div> </td>
+        <td> <div id="3.4" class="circle"></div> </td>
+        <td> <div id="r.4" class="results"></div> </td>
+    </tr>
+
+    <tr>
+        <td> <div id="0.3" class="circle"></div> </td>
+        <td> <div id="1.3" class="circle"></div> </td>
+        <td> <div id="2.3" class="circle"></div> </td>
+        <td> <div id="3.3" class="circle"></div> </td>
+        <td> <div id="r.3" class="results"></div> </td>
     </tr>
 
     <tr>
@@ -42,45 +103,75 @@
     </tr>
 
     <tr>
-        <td> <input type='text' class="showPaletteOnly"/> </td>
-        <td> <input type='text' class="showPaletteOnly"/> </td>
-        <td> <input type='text' class="showPaletteOnly"/> </td>
-        <td> <input type='text' class="showPaletteOnly"/> </td>
-        <td> <div id="r.2" class="results"></div> </td>
+        <td> <div id="0.1" class="circle"></div> </td>
+        <td> <div id="1.1" class="circle"></div> </td>
+        <td> <div id="2.1" class="circle"></div> </td>
+        <td> <div id="3.1" class="circle"></div> </td>
+        <td> <div id="r.1" class="results"></div> </td>
+    </tr>
+
+    <tr>
+        <td> <div id="0.0" class="circle"></div> </td>
+        <td> <div id="1.0" class="circle"></div> </td>
+        <td> <div id="2.0" class="circle"></div> </td>
+        <td> <div id="3.0" class="circle"></div> </td>
+        <td> <div id="r.0" class="results"></div> </td>
+    </tr>
+
+
+    <tr>
+        <td>
+            <select id="guess_color_1">
+                <option value="red">red</option>
+                <option value="white">white</option>
+                <option value="blue">blue</option>
+                <option value="violet">violet</option>
+                <option value="yellow">yellow</option>
+                <option value="green">green</option>
+            </select>
+        </td>
+
+        <td>
+            <select id="guess_color_2">
+                <option value="red">red</option>
+                <option value="white">white</option>
+                <option value="blue">blue</option>
+                <option value="violet">violet</option>
+                <option value="yellow">yellow</option>
+                <option value="green">green</option>
+            </select>
+        </td>
+
+        <td>
+            <select id="guess_color_3">
+                <option value="red">red</option>
+                <option value="white">white</option>
+                <option value="blue">blue</option>
+                <option value="violet">violet</option>
+                <option value="yellow">yellow</option>
+                <option value="green">green</option>
+            </select>
+        </td>
+
+        <td>
+            <select id="guess_color_4">
+                <option value="red">red</option>
+                <option value="white">white</option>
+                <option value="blue">blue</option>
+                <option value="violet">violet</option>
+                <option value="yellow">yellow</option>
+                <option value="green">green</option>
+            </select>
+        </td>
+
+        <td> <button id="RaadBtn" onclick="Raad()">Raad!</button> </td>
     </tr>
 
 </table>
 
+<!-- start the game -->
+<script src='js/mastermind.js' type="text/javascript"></script>
 
-
-
-
-
-
-
-
-<script type="text/javascript">
-
-    $(".showPaletteOnly").spectrum({
-        color: "white",
-        showPaletteOnly: true,
-        showPalette:true,
-        hideAfterPaletteSelect:true,
-        palette: [
-            [
-                "white",
-                "rgb(255,0,0)",
-                "rgb(109,158,235)",
-                "rgb(153,0,255)",
-                "rgb(106,168,79)",
-                "rgb(255,217,102)",
-                "rgb(255,153,0)"
-            ]
-        ]
-    });
-
-
-</script>
 
 </body>
 </html>
